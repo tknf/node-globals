@@ -1,6 +1,6 @@
 {
   "name": "@tknf/node-globals",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Global support for NodeJS runtime",
   "author": "Tasuku Kuribayashi <kuribayashi@tknf.net>",
   "repository": {
