@@ -8,3 +8,4 @@ export { AbortController } from "abort-controller";
 export { Headers, Request, Response, fetch } from "./fetch";
 export { FormData } from "./node-form-data";
 export { parseMultipartFormData as unstable_parseMultipartFormData } from "./node-parse-multipart-form-data";
+export { installGlobals } from "./node-globals";
