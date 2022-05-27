@@ -14,14 +14,14 @@ declare global {
       atob: typeof atob;
       btoa: typeof btoa;
 
-      Blob: typeof Blob;
-      File: typeof File;
+      Blob: typeof NodeBlob;
+      File: typeof NodeFile;
 
-      Headers: typeof Headers;
-      Request: typeof Request;
-      Response: typeof Response;
-      fetch: typeof fetch;
-      FormData: typeof FormData;
+      Headers: typeof NodeHeaders;
+      Request: typeof NodeRequest;
+      Response: typeof NodeResponse;
+      fetch: typeof nodeFetch;
+      FormData: typeof NodeFormData;
     }
   }
 }
