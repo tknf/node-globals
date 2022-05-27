@@ -26,7 +26,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "dev": "yarn build --preserveWatchOutput -w",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {
     "@types/busboy": "^0.3.1",
