@@ -2,10 +2,14 @@ import sourceMapSupport from "source-map-support";
 
 sourceMapSupport.install();
 
-export type { HeadersInit, RequestInfo, RequestInit, ResponseInit } from "./fetch";
-export type { UploadHandler, UploadHandlerArgs } from "./node-form-data";
 export { AbortController } from "abort-controller";
-export { Headers, Request, Response, fetch } from "./fetch";
-export { FormData } from "./node-form-data";
-export { parseMultipartFormData as unstable_parseMultipartFormData } from "./node-parse-multipart-form-data";
-export { installGlobals } from "./node-globals";
+
+export type { HeadersInit, RequestInfo, RequestInit, ResponseInit } from "./fetch";
+export { fetch, FormData, Headers, Request, Response } from "./fetch";
+export { installGlobals } from "./globals";
+export {
+  createReadableStreamFromReadable,
+  readableStreamToString,
+  writeAsyncIterableToWritable,
+  writeReadableStreamToWritable
+} from "./stream";
